@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6224FEB74F00400941 /* AppDelegate.swift */; };
 		D790FC6524FEB74F00400941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6424FEB74F00400941 /* ViewController.swift */; };
-		D790FC6724FEB74F00400941 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6624FEB74F00400941 /* Experience.rcproject */; };
 		D790FC6A24FEB74F00400941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D790FC6824FEB74F00400941 /* Main.storyboard */; };
 		D790FC6C24FEB75300400941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D790FC6B24FEB75300400941 /* Assets.xcassets */; };
 		D790FC6F24FEB75300400941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D790FC6D24FEB75300400941 /* LaunchScreen.storyboard */; };
@@ -38,7 +37,6 @@
 		D790FC5F24FEB74F00400941 /* Battleship AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battleship AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790FC6224FEB74F00400941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D790FC6424FEB74F00400941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D790FC6624FEB74F00400941 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		D790FC6924FEB74F00400941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D790FC6B24FEB75300400941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D790FC6E24FEB75300400941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +99,6 @@
 			children = (
 				D790FC6224FEB74F00400941 /* AppDelegate.swift */,
 				D790FC6424FEB74F00400941 /* ViewController.swift */,
-				D790FC6624FEB74F00400941 /* Experience.rcproject */,
 				D790FC6824FEB74F00400941 /* Main.storyboard */,
 				D790FC6B24FEB75300400941 /* Assets.xcassets */,
 				D790FC6D24FEB75300400941 /* LaunchScreen.storyboard */,
@@ -261,7 +258,6 @@
 			files = (
 				D790FC6524FEB74F00400941 /* ViewController.swift in Sources */,
 				D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */,
-				D790FC6724FEB74F00400941 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,10 +433,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CH744BWJLN;
 				INFOPLIST_FILE = "Battleship AR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lexHrabovskyi.Battleship-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -455,10 +453,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CH744BWJLN;
 				INFOPLIST_FILE = "Battleship AR/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lexHrabovskyi.Battleship-AR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
