@@ -38,11 +38,12 @@ class ViewController: UIViewController {
     private func addSeaFields(toAnchor anchor: AnchorEntity) {
         
         var seaFields = [Entity]()
-        for _ in 1...100 {
+        for iterator in 1...100 {
             
             let fieldMesh = MeshResource.generateBox(width: 0.02, height: 0.005, depth: 0.02)
             let waterMaterial = SimpleMaterial(color: .cyan, roughness: .float(0.2), isMetallic: false)
             let fieldModel = ModelEntity(mesh: fieldMesh, materials: [waterMaterial])
+            fieldModel.name = "Second player field \(iterator)"
             fieldModel.generateCollisionShapes(recursive: true)
             seaFields.append(fieldModel)
             
@@ -59,6 +60,28 @@ class ViewController: UIViewController {
         
     }
     
+    // MARK: - interactions
+    @IBAction func onTapGesture(_ sender: UITapGestureRecognizer) {
+        
+        let tapLocation = sender.location(in: arView)
+        guard let touchedField = arView.entity(at: tapLocation) else { return }
+        guard isEnemyEmptyField(touchedField) else { return }
+        
+        let maskMesh = MeshResource.generateBox(width: 0.022, height: 0.01, depth: 0.022)
+        let maskMaterial = SimpleMaterial(color: .yellow, roughness: .float(0.3), isMetallic: false)
+        let touchedFieldMask = ModelEntity(mesh: maskMesh, materials: [maskMaterial])
+        touchedFieldMask.name = "Field mask"
+        touchedFieldMask.generateCollisionShapes(recursive: true)
+        
+        touchedField.addChild(touchedFieldMask)
+        
+    }
     
+    private func isEnemyEmptyField(_ entity: Entity) -> Bool {
+        
+        // TODO: check the player in multiplayer
+        return entity.name.contains("Second player field")
+        
+    }
     
 }
