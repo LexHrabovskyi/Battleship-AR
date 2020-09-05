@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6224FEB74F00400941 /* AppDelegate.swift */; };
-		D790FC6524FEB74F00400941 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6424FEB74F00400941 /* ViewController.swift */; };
-		D790FC6A24FEB74F00400941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D790FC6824FEB74F00400941 /* Main.storyboard */; };
+		D790FC6524FEB74F00400941 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6424FEB74F00400941 /* GameViewController.swift */; };
 		D790FC6C24FEB75300400941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D790FC6B24FEB75300400941 /* Assets.xcassets */; };
 		D790FC6F24FEB75300400941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D790FC6D24FEB75300400941 /* LaunchScreen.storyboard */; };
 		D790FC7A24FEB75300400941 /* Battleship_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC7924FEB75300400941 /* Battleship_ARTests.swift */; };
 		D790FC8524FEB75300400941 /* Battleship_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC8424FEB75300400941 /* Battleship_ARUITests.swift */; };
+		D7A3B13A2504179A00FBB733 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A3B1392504179A00FBB733 /* GameViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,7 @@
 /* Begin PBXFileReference section */
 		D790FC5F24FEB74F00400941 /* Battleship AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battleship AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790FC6224FEB74F00400941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D790FC6424FEB74F00400941 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D790FC6924FEB74F00400941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D790FC6424FEB74F00400941 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		D790FC6B24FEB75300400941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D790FC6E24FEB75300400941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D790FC7024FEB75300400941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		D790FC8024FEB75300400941 /* Battleship ARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Battleship ARUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790FC8424FEB75300400941 /* Battleship_ARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battleship_ARUITests.swift; sourceTree = "<group>"; };
 		D790FC8624FEB75300400941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7A3B1392504179A00FBB733 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D790FC6224FEB74F00400941 /* AppDelegate.swift */,
-				D790FC6424FEB74F00400941 /* ViewController.swift */,
-				D790FC6824FEB74F00400941 /* Main.storyboard */,
+				D7A3B1382504174E00FBB733 /* Views */,
 				D790FC6B24FEB75300400941 /* Assets.xcassets */,
 				D790FC6D24FEB75300400941 /* LaunchScreen.storyboard */,
 				D790FC7024FEB75300400941 /* Info.plist */,
@@ -123,6 +122,15 @@
 				D790FC8624FEB75300400941 /* Info.plist */,
 			);
 			path = "Battleship ARUITests";
+			sourceTree = "<group>";
+		};
+		D7A3B1382504174E00FBB733 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D790FC6424FEB74F00400941 /* GameViewController.swift */,
+				D7A3B1392504179A00FBB733 /* GameViewController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +239,7 @@
 			files = (
 				D790FC6F24FEB75300400941 /* LaunchScreen.storyboard in Resources */,
 				D790FC6C24FEB75300400941 /* Assets.xcassets in Resources */,
-				D790FC6A24FEB74F00400941 /* Main.storyboard in Resources */,
+				D7A3B13A2504179A00FBB733 /* GameViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D790FC6524FEB74F00400941 /* ViewController.swift in Sources */,
+				D790FC6524FEB74F00400941 /* GameViewController.swift in Sources */,
 				D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D790FC6824FEB74F00400941 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D790FC6924FEB74F00400941 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D790FC6D24FEB75300400941 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

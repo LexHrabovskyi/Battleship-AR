@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameViewController" customModule="Battleship_AR" customModuleProvider="target">
+            <connections>
+                <outlet property="arView" destination="tnc-cc-vna" id="7aN-Z9-eQY"/>
+                <outlet property="view" destination="zan-ft-BYy" id="hct-rG-hZc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zan-ft-BYy">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <arView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tnc-cc-vna">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="FMW-6c-g3M" appends="YES" id="tig-Ay-Azb"/>
+                    </connections>
+                </arView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Tr4-la-sTU" firstAttribute="trailing" secondItem="tnc-cc-vna" secondAttribute="trailing" id="B1F-VX-wnT"/>
+                <constraint firstAttribute="bottom" secondItem="tnc-cc-vna" secondAttribute="bottom" id="Kgr-LE-vXi"/>
+                <constraint firstItem="tnc-cc-vna" firstAttribute="top" secondItem="zan-ft-BYy" secondAttribute="top" id="N7v-Oh-4kC"/>
+                <constraint firstItem="tnc-cc-vna" firstAttribute="leading" secondItem="Tr4-la-sTU" secondAttribute="leading" id="R3O-NZ-HrO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Tr4-la-sTU"/>
+            <point key="canvasLocation" x="42" y="-516"/>
+        </view>
+        <tapGestureRecognizer id="FMW-6c-g3M">
+            <connections>
+                <action selector="onTapGesture:" destination="-1" id="Gkd-V5-5TU"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
