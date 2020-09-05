@@ -14,6 +14,30 @@
 		D790FC7A24FEB75300400941 /* Battleship_ARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC7924FEB75300400941 /* Battleship_ARTests.swift */; };
 		D790FC8524FEB75300400941 /* Battleship_ARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC8424FEB75300400941 /* Battleship_ARUITests.swift */; };
 		D7A3B13A2504179A00FBB733 /* GameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A3B1392504179A00FBB733 /* GameViewController.xib */; };
+		D7DC884D25041DA7005CE084 /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC884C25041DA7005CE084 /* FieldModel.swift */; };
+		D7DC884E25041DA7005CE084 /* FieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC884C25041DA7005CE084 /* FieldModel.swift */; };
+		D7DC885025041E3E005CE084 /* ShipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC884F25041E3E005CE084 /* ShipType.swift */; };
+		D7DC885125041E3E005CE084 /* ShipType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC884F25041E3E005CE084 /* ShipType.swift */; };
+		D7DC885325041E9F005CE084 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885225041E9F005CE084 /* Ship.swift */; };
+		D7DC885425041E9F005CE084 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885225041E9F005CE084 /* Ship.swift */; };
+		D7DC88562504202A005CE084 /* HitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC88552504202A005CE084 /* HitResult.swift */; };
+		D7DC88572504202A005CE084 /* HitResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC88552504202A005CE084 /* HitResult.swift */; };
+		D7DC885925042095005CE084 /* PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885825042095005CE084 /* PlayerType.swift */; };
+		D7DC885A25042095005CE084 /* PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885825042095005CE084 /* PlayerType.swift */; };
+		D7DC885D2504211E005CE084 /* BattleshipGameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885C2504211E005CE084 /* BattleshipGameProtocol.swift */; };
+		D7DC885E2504211E005CE084 /* BattleshipGameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885C2504211E005CE084 /* BattleshipGameProtocol.swift */; };
+		D7DC88602504217B005CE084 /* GamePhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885F2504217B005CE084 /* GamePhases.swift */; };
+		D7DC88612504217B005CE084 /* GamePhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885F2504217B005CE084 /* GamePhases.swift */; };
+		D7DC88632504220D005CE084 /* BattlefieldProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC88622504220D005CE084 /* BattlefieldProtocol.swift */; };
+		D7DC88642504220D005CE084 /* BattlefieldProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC88622504220D005CE084 /* BattlefieldProtocol.swift */; };
+		D7DC8866250422A6005CE084 /* PlayerTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC8865250422A6005CE084 /* PlayerTurn.swift */; };
+		D7DC8867250422A6005CE084 /* PlayerTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC8865250422A6005CE084 /* PlayerTurn.swift */; };
+		D7DC886A2504233C005CE084 /* GameErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC88692504233C005CE084 /* GameErrors.swift */; };
+		D7DC886B2504233C005CE084 /* GameErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC88692504233C005CE084 /* GameErrors.swift */; };
+		D7DC886D250424E5005CE084 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC886C250424E5005CE084 /* Direction.swift */; };
+		D7DC886E250424E5005CE084 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC886C250424E5005CE084 /* Direction.swift */; };
+		D7DC88702504262C005CE084 /* BattleshipGameDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC886F2504262C005CE084 /* BattleshipGameDelegateProtocol.swift */; };
+		D7DC88712504262C005CE084 /* BattleshipGameDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC886F2504262C005CE084 /* BattleshipGameDelegateProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +71,18 @@
 		D790FC8424FEB75300400941 /* Battleship_ARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battleship_ARUITests.swift; sourceTree = "<group>"; };
 		D790FC8624FEB75300400941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7A3B1392504179A00FBB733 /* GameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameViewController.xib; sourceTree = "<group>"; };
+		D7DC884C25041DA7005CE084 /* FieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldModel.swift; sourceTree = "<group>"; };
+		D7DC884F25041E3E005CE084 /* ShipType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipType.swift; sourceTree = "<group>"; };
+		D7DC885225041E9F005CE084 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		D7DC88552504202A005CE084 /* HitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitResult.swift; sourceTree = "<group>"; };
+		D7DC885825042095005CE084 /* PlayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerType.swift; sourceTree = "<group>"; };
+		D7DC885C2504211E005CE084 /* BattleshipGameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleshipGameProtocol.swift; sourceTree = "<group>"; };
+		D7DC885F2504217B005CE084 /* GamePhases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhases.swift; sourceTree = "<group>"; };
+		D7DC88622504220D005CE084 /* BattlefieldProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlefieldProtocol.swift; sourceTree = "<group>"; };
+		D7DC8865250422A6005CE084 /* PlayerTurn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTurn.swift; sourceTree = "<group>"; };
+		D7DC88692504233C005CE084 /* GameErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameErrors.swift; sourceTree = "<group>"; };
+		D7DC886C250424E5005CE084 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		D7DC886F2504262C005CE084 /* BattleshipGameDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleshipGameDelegateProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				D790FC6224FEB74F00400941 /* AppDelegate.swift */,
+				D7DC884B25041D75005CE084 /* Game models */,
 				D7A3B1382504174E00FBB733 /* Views */,
 				D790FC6B24FEB75300400941 /* Assets.xcassets */,
 				D790FC6D24FEB75300400941 /* LaunchScreen.storyboard */,
@@ -131,6 +168,41 @@
 				D7A3B1392504179A00FBB733 /* GameViewController.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D7DC884B25041D75005CE084 /* Game models */ = {
+			isa = PBXGroup;
+			children = (
+				D7DC885C2504211E005CE084 /* BattleshipGameProtocol.swift */,
+				D7DC886F2504262C005CE084 /* BattleshipGameDelegateProtocol.swift */,
+				D7DC88622504220D005CE084 /* BattlefieldProtocol.swift */,
+				D7DC885B250420E8005CE084 /* Basic elements */,
+				D7DC88682504231C005CE084 /* Game errors */,
+			);
+			path = "Game models";
+			sourceTree = "<group>";
+		};
+		D7DC885B250420E8005CE084 /* Basic elements */ = {
+			isa = PBXGroup;
+			children = (
+				D7DC884C25041DA7005CE084 /* FieldModel.swift */,
+				D7DC885225041E9F005CE084 /* Ship.swift */,
+				D7DC884F25041E3E005CE084 /* ShipType.swift */,
+				D7DC885825042095005CE084 /* PlayerType.swift */,
+				D7DC88552504202A005CE084 /* HitResult.swift */,
+				D7DC885F2504217B005CE084 /* GamePhases.swift */,
+				D7DC8865250422A6005CE084 /* PlayerTurn.swift */,
+				D7DC886C250424E5005CE084 /* Direction.swift */,
+			);
+			path = "Basic elements";
+			sourceTree = "<group>";
+		};
+		D7DC88682504231C005CE084 /* Game errors */ = {
+			isa = PBXGroup;
+			children = (
+				D7DC88692504233C005CE084 /* GameErrors.swift */,
+			);
+			path = "Game errors";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +336,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DC88562504202A005CE084 /* HitResult.swift in Sources */,
 				D790FC6524FEB74F00400941 /* GameViewController.swift in Sources */,
+				D7DC885925042095005CE084 /* PlayerType.swift in Sources */,
+				D7DC885D2504211E005CE084 /* BattleshipGameProtocol.swift in Sources */,
+				D7DC88632504220D005CE084 /* BattlefieldProtocol.swift in Sources */,
+				D7DC8866250422A6005CE084 /* PlayerTurn.swift in Sources */,
 				D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */,
+				D7DC884D25041DA7005CE084 /* FieldModel.swift in Sources */,
+				D7DC885025041E3E005CE084 /* ShipType.swift in Sources */,
+				D7DC88602504217B005CE084 /* GamePhases.swift in Sources */,
+				D7DC886A2504233C005CE084 /* GameErrors.swift in Sources */,
+				D7DC885325041E9F005CE084 /* Ship.swift in Sources */,
+				D7DC88702504262C005CE084 /* BattleshipGameDelegateProtocol.swift in Sources */,
+				D7DC886D250424E5005CE084 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +357,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DC884E25041DA7005CE084 /* FieldModel.swift in Sources */,
+				D7DC88612504217B005CE084 /* GamePhases.swift in Sources */,
+				D7DC885425041E9F005CE084 /* Ship.swift in Sources */,
+				D7DC88712504262C005CE084 /* BattleshipGameDelegateProtocol.swift in Sources */,
+				D7DC885E2504211E005CE084 /* BattleshipGameProtocol.swift in Sources */,
+				D7DC88642504220D005CE084 /* BattlefieldProtocol.swift in Sources */,
+				D7DC885125041E3E005CE084 /* ShipType.swift in Sources */,
+				D7DC88572504202A005CE084 /* HitResult.swift in Sources */,
+				D7DC8867250422A6005CE084 /* PlayerTurn.swift in Sources */,
+				D7DC885A25042095005CE084 /* PlayerType.swift in Sources */,
 				D790FC7A24FEB75300400941 /* Battleship_ARTests.swift in Sources */,
+				D7DC886B2504233C005CE084 /* GameErrors.swift in Sources */,
+				D7DC886E250424E5005CE084 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

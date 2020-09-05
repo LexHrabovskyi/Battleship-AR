@@ -12,9 +12,12 @@ import RealityKit
 class GameViewController: UIViewController {
     
     @IBOutlet weak var arView: ARView!
+    
     private let enemyFieldOffset: Float = 0.15
+//    private let gameModel: BattleshipGame
     
     init() {
+        // TODO: need to place gameModel: BattleshipGame
         super.init(nibName: "GameViewController", bundle: Bundle.main)
     }
     
