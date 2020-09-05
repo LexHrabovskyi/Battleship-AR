@@ -70,6 +70,8 @@ class ViewController: UIViewController {
         let maskMesh = MeshResource.generateBox(width: 0.022, height: 0.01, depth: 0.022)
         let maskMaterial = SimpleMaterial(color: .yellow, roughness: .float(0.3), isMetallic: false)
         let touchedFieldMask = ModelEntity(mesh: maskMesh, materials: [maskMaterial])
+        touchedFieldMask.name = "Field mask"
+        touchedFieldMask.generateCollisionShapes(recursive: true)
         
         touchedField.addChild(touchedFieldMask)
         
