@@ -66,7 +66,12 @@ class ViewController: UIViewController {
         let tapLocation = sender.location(in: arView)
         guard let touchedField = arView.entity(at: tapLocation) else { return }
         guard isEnemyEmptyField(touchedField) else { return }
-        print("is the field: \(touchedField.name)")
+        
+        let maskMesh = MeshResource.generateBox(width: 0.022, height: 0.01, depth: 0.022)
+        let maskMaterial = SimpleMaterial(color: .yellow, roughness: .float(0.3), isMetallic: false)
+        let touchedFieldMask = ModelEntity(mesh: maskMesh, materials: [maskMaterial])
+        
+        touchedField.addChild(touchedFieldMask)
         
     }
     
