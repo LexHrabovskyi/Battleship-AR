@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D77837E72504DE1000EC7E8B /* BattlefieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */; };
+		D77837E82504DE1000EC7E8B /* BattlefieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */; };
 		D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6224FEB74F00400941 /* AppDelegate.swift */; };
 		D790FC6524FEB74F00400941 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6424FEB74F00400941 /* GameViewController.swift */; };
 		D790FC6C24FEB75300400941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D790FC6B24FEB75300400941 /* Assets.xcassets */; };
@@ -58,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlefieldModel.swift; sourceTree = "<group>"; };
 		D790FC5F24FEB74F00400941 /* Battleship AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battleship AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790FC6224FEB74F00400941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D790FC6424FEB74F00400941 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D77837E52504DDD900EC7E8B /* Engine v.1 */ = {
+			isa = PBXGroup;
+			children = (
+				D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */,
+			);
+			path = "Engine v.1";
+			sourceTree = "<group>";
+		};
 		D790FC5624FEB74F00400941 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +187,7 @@
 				D7DC885C2504211E005CE084 /* BattleshipGameProtocol.swift */,
 				D7DC886F2504262C005CE084 /* BattleshipGameDelegateProtocol.swift */,
 				D7DC88622504220D005CE084 /* BattlefieldProtocol.swift */,
+				D77837E52504DDD900EC7E8B /* Engine v.1 */,
 				D7DC885B250420E8005CE084 /* Basic elements */,
 				D7DC88682504231C005CE084 /* Game errors */,
 			);
@@ -349,6 +361,7 @@
 				D7DC886A2504233C005CE084 /* GameErrors.swift in Sources */,
 				D7DC885325041E9F005CE084 /* Ship.swift in Sources */,
 				D7DC88702504262C005CE084 /* BattleshipGameDelegateProtocol.swift in Sources */,
+				D77837E72504DE1000EC7E8B /* BattlefieldModel.swift in Sources */,
 				D7DC886D250424E5005CE084 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +372,7 @@
 			files = (
 				D7DC884E25041DA7005CE084 /* FieldModel.swift in Sources */,
 				D7DC88612504217B005CE084 /* GamePhases.swift in Sources */,
+				D77837E82504DE1000EC7E8B /* BattlefieldModel.swift in Sources */,
 				D7DC885425041E9F005CE084 /* Ship.swift in Sources */,
 				D7DC88712504262C005CE084 /* BattleshipGameDelegateProtocol.swift in Sources */,
 				D7DC885E2504211E005CE084 /* BattleshipGameProtocol.swift in Sources */,
