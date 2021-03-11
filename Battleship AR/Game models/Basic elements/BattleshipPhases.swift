@@ -1,5 +1,5 @@
 //
-//  GamePhases.swift
+//  BattleshipPhases.swift
 //  Battleship AR
 //
 //  Created by Александр on 05.09.2020.
