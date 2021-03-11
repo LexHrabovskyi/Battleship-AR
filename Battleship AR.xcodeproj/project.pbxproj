@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D758727A25FA1831009D750C /* GameMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758727925FA1831009D750C /* GameMainView.swift */; };
+		D758727F25FA187D009D750C /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758727E25FA187D009D750C /* ARViewContainer.swift */; };
+		D758729B25FA1AF2009D750C /* GamePhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758729A25FA1AF2009D750C /* GamePhases.swift */; };
+		D758729F25FA1B02009D750C /* GamePhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758729A25FA1AF2009D750C /* GamePhases.swift */; };
+		D75872A525FA1E0C009D750C /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75872A425FA1E0C009D750C /* MainMenuView.swift */; };
+		D75872B125FA20F2009D750C /* ViewIsHiddenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75872B025FA20F2009D750C /* ViewIsHiddenExtension.swift */; };
 		D77837E72504DE1000EC7E8B /* BattlefieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */; };
 		D77837E82504DE1000EC7E8B /* BattlefieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */; };
 		D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6224FEB74F00400941 /* AppDelegate.swift */; };
@@ -28,8 +34,7 @@
 		D7DC885A25042095005CE084 /* PlayerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885825042095005CE084 /* PlayerType.swift */; };
 		D7DC885D2504211E005CE084 /* BattleshipGameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885C2504211E005CE084 /* BattleshipGameProtocol.swift */; };
 		D7DC885E2504211E005CE084 /* BattleshipGameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885C2504211E005CE084 /* BattleshipGameProtocol.swift */; };
-		D7DC88602504217B005CE084 /* GamePhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885F2504217B005CE084 /* GamePhases.swift */; };
-		D7DC88612504217B005CE084 /* GamePhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885F2504217B005CE084 /* GamePhases.swift */; };
+		D7DC88602504217B005CE084 /* BattleshipPhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC885F2504217B005CE084 /* BattleshipPhases.swift */; };
 		D7DC88632504220D005CE084 /* BattlefieldProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC88622504220D005CE084 /* BattlefieldProtocol.swift */; };
 		D7DC88642504220D005CE084 /* BattlefieldProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC88622504220D005CE084 /* BattlefieldProtocol.swift */; };
 		D7DC8866250422A6005CE084 /* PlayerTurn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DC8865250422A6005CE084 /* PlayerTurn.swift */; };
@@ -60,6 +65,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D758727925FA1831009D750C /* GameMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMainView.swift; sourceTree = "<group>"; };
+		D758727E25FA187D009D750C /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		D758729A25FA1AF2009D750C /* GamePhases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhases.swift; sourceTree = "<group>"; };
+		D75872A425FA1E0C009D750C /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		D75872B025FA20F2009D750C /* ViewIsHiddenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIsHiddenExtension.swift; sourceTree = "<group>"; };
 		D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlefieldModel.swift; sourceTree = "<group>"; };
 		D790FC5F24FEB74F00400941 /* Battleship AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battleship AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790FC6224FEB74F00400941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +90,7 @@
 		D7DC88552504202A005CE084 /* HitResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitResult.swift; sourceTree = "<group>"; };
 		D7DC885825042095005CE084 /* PlayerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerType.swift; sourceTree = "<group>"; };
 		D7DC885C2504211E005CE084 /* BattleshipGameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleshipGameProtocol.swift; sourceTree = "<group>"; };
-		D7DC885F2504217B005CE084 /* GamePhases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhases.swift; sourceTree = "<group>"; };
+		D7DC885F2504217B005CE084 /* BattleshipPhases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleshipPhases.swift; sourceTree = "<group>"; };
 		D7DC88622504220D005CE084 /* BattlefieldProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlefieldProtocol.swift; sourceTree = "<group>"; };
 		D7DC8865250422A6005CE084 /* PlayerTurn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTurn.swift; sourceTree = "<group>"; };
 		D7DC88692504233C005CE084 /* GameErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameErrors.swift; sourceTree = "<group>"; };
@@ -113,6 +123,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D758728925FA19F6009D750C /* ARViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D758727E25FA187D009D750C /* ARViewContainer.swift */,
+				D790FC6424FEB74F00400941 /* GameViewController.swift */,
+				D7A3B1392504179A00FBB733 /* GameViewController.xib */,
+			);
+			path = ARViewController;
+			sourceTree = "<group>";
+		};
+		D758728D25FA1A27009D750C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D790FC6224FEB74F00400941 /* AppDelegate.swift */,
+				D758729A25FA1AF2009D750C /* GamePhases.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D75872A325FA1DFB009D750C /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D75872A425FA1E0C009D750C /* MainMenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		D75872AF25FA20BF009D750C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D75872B025FA20F2009D750C /* ViewIsHiddenExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		D77837E52504DDD900EC7E8B /* Engine v.1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,9 +189,9 @@
 		D790FC6124FEB74F00400941 /* Battleship AR */ = {
 			isa = PBXGroup;
 			children = (
-				D790FC6224FEB74F00400941 /* AppDelegate.swift */,
+				D758728D25FA1A27009D750C /* Application */,
 				D7DC884B25041D75005CE084 /* Game models */,
-				D7A3B1382504174E00FBB733 /* Views */,
+				D7A3B1382504174E00FBB733 /* Presentation */,
 				D790FC6B24FEB75300400941 /* Assets.xcassets */,
 				D790FC6D24FEB75300400941 /* LaunchScreen.storyboard */,
 				D790FC7024FEB75300400941 /* Info.plist */,
@@ -172,13 +217,15 @@
 			path = "Battleship ARUITests";
 			sourceTree = "<group>";
 		};
-		D7A3B1382504174E00FBB733 /* Views */ = {
+		D7A3B1382504174E00FBB733 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				D790FC6424FEB74F00400941 /* GameViewController.swift */,
-				D7A3B1392504179A00FBB733 /* GameViewController.xib */,
+				D758727925FA1831009D750C /* GameMainView.swift */,
+				D75872A325FA1DFB009D750C /* Menu */,
+				D758728925FA19F6009D750C /* ARViewController */,
+				D75872AF25FA20BF009D750C /* Extensions */,
 			);
-			path = Views;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		D7DC884B25041D75005CE084 /* Game models */ = {
@@ -197,12 +244,12 @@
 		D7DC885B250420E8005CE084 /* Basic elements */ = {
 			isa = PBXGroup;
 			children = (
+				D7DC885F2504217B005CE084 /* BattleshipPhases.swift */,
 				D7DC884C25041DA7005CE084 /* FieldModel.swift */,
 				D7DC885225041E9F005CE084 /* Ship.swift */,
 				D7DC884F25041E3E005CE084 /* ShipType.swift */,
 				D7DC885825042095005CE084 /* PlayerType.swift */,
 				D7DC88552504202A005CE084 /* HitResult.swift */,
-				D7DC885F2504217B005CE084 /* GamePhases.swift */,
 				D7DC8865250422A6005CE084 /* PlayerTurn.swift */,
 				D7DC886C250424E5005CE084 /* Direction.swift */,
 			);
@@ -354,14 +401,19 @@
 				D7DC885D2504211E005CE084 /* BattleshipGameProtocol.swift in Sources */,
 				D7DC88632504220D005CE084 /* BattlefieldProtocol.swift in Sources */,
 				D7DC8866250422A6005CE084 /* PlayerTurn.swift in Sources */,
+				D758727F25FA187D009D750C /* ARViewContainer.swift in Sources */,
+				D75872A525FA1E0C009D750C /* MainMenuView.swift in Sources */,
+				D758729B25FA1AF2009D750C /* GamePhases.swift in Sources */,
 				D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */,
+				D758727A25FA1831009D750C /* GameMainView.swift in Sources */,
 				D7DC884D25041DA7005CE084 /* FieldModel.swift in Sources */,
 				D7DC885025041E3E005CE084 /* ShipType.swift in Sources */,
-				D7DC88602504217B005CE084 /* GamePhases.swift in Sources */,
+				D7DC88602504217B005CE084 /* BattleshipPhases.swift in Sources */,
 				D7DC886A2504233C005CE084 /* GameErrors.swift in Sources */,
 				D7DC885325041E9F005CE084 /* Ship.swift in Sources */,
 				D7DC88702504262C005CE084 /* BattleshipGameDelegateProtocol.swift in Sources */,
 				D77837E72504DE1000EC7E8B /* BattlefieldModel.swift in Sources */,
+				D75872B125FA20F2009D750C /* ViewIsHiddenExtension.swift in Sources */,
 				D7DC886D250424E5005CE084 /* Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DC884E25041DA7005CE084 /* FieldModel.swift in Sources */,
-				D7DC88612504217B005CE084 /* GamePhases.swift in Sources */,
 				D77837E82504DE1000EC7E8B /* BattlefieldModel.swift in Sources */,
 				D7DC885425041E9F005CE084 /* Ship.swift in Sources */,
 				D7DC88712504262C005CE084 /* BattleshipGameDelegateProtocol.swift in Sources */,
@@ -382,6 +433,7 @@
 				D7DC8867250422A6005CE084 /* PlayerTurn.swift in Sources */,
 				D7DC885A25042095005CE084 /* PlayerType.swift in Sources */,
 				D790FC7A24FEB75300400941 /* Battleship_ARTests.swift in Sources */,
+				D758729F25FA1B02009D750C /* GamePhases.swift in Sources */,
 				D7DC886B2504233C005CE084 /* GameErrors.swift in Sources */,
 				D7DC886E250424E5005CE084 /* Direction.swift in Sources */,
 			);
