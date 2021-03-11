@@ -9,13 +9,20 @@
 import UIKit
 import RealityKit
 
-class ViewController: UIViewController {
+class GameViewController: UIViewController {
     
-    @IBOutlet var arView: ARView!
+    @IBOutlet weak var arView: ARView!
     
     private let enemyFieldOffset: Float = 0.15
+//    private let gameModel: BattleshipGame
+    
+    init() {
+        // TODO: need to place gameModel: BattleshipGame
+        super.init(nibName: "GameViewController", bundle: Bundle.main)
+    }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         let mainAnchor = AnchorEntity(plane: .horizontal, minimumBounds: [0.4, 0.6])
@@ -82,6 +89,10 @@ class ViewController: UIViewController {
         // TODO: check the player in multiplayer
         return entity.name.contains("Second player field")
         
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("not implemented")
     }
     
 }
