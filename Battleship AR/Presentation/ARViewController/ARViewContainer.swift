@@ -11,6 +11,7 @@ import RealityKit
 
 struct ARViewContainer: UIViewControllerRepresentable {
     
+    @EnvironmentObject var gamePhases: GameStates
     typealias UIViewControllerType = GameViewController
     
     func makeUIViewController(context: Context) -> GameViewController {

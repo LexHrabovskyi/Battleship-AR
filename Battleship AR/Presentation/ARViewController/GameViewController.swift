@@ -8,8 +8,9 @@
 
 import UIKit
 import RealityKit
+import Combine
 
-class GameViewController: UIViewController {
+final class GameViewController: UIViewController {
     
     @IBOutlet weak var arView: ARView!
     
