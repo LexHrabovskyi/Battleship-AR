@@ -28,13 +28,25 @@ struct GameControlsView: View {
                         .font(.title)
                         .foregroundColor(.white)
                     
-                    Text("Begin game")
+                    Text("Begin new game")
                         .bold()
                         .foregroundColor(.white)
                         .onTapGesture {
-                            print("changing state")
-                            self.gameState.appPhase = .game
+                            print("beginning a new game")
+                            self.gameState.appPhase = .startingNewGame
                         }
+                    
+                    if gameState.appPhase != .mainMenu {
+                        
+                        Text("Return")
+                            .bold()
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                print("returning")
+                                self.gameState.appPhase = .game
+                            }
+                        
+                    }
                     
                 }
                 
