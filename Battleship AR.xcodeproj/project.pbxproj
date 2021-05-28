@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		D758727A25FA1831009D750C /* GameMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758727925FA1831009D750C /* GameMainView.swift */; };
 		D758727F25FA187D009D750C /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758727E25FA187D009D750C /* ARViewContainer.swift */; };
-		D758729B25FA1AF2009D750C /* GamePhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758729A25FA1AF2009D750C /* GamePhases.swift */; };
-		D758729F25FA1B02009D750C /* GamePhases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758729A25FA1AF2009D750C /* GamePhases.swift */; };
-		D75872A525FA1E0C009D750C /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75872A425FA1E0C009D750C /* MainMenuView.swift */; };
+		D758729B25FA1AF2009D750C /* GameStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758729A25FA1AF2009D750C /* GameStates.swift */; };
+		D758729F25FA1B02009D750C /* GameStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D758729A25FA1AF2009D750C /* GameStates.swift */; };
+		D75872A525FA1E0C009D750C /* GameControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75872A425FA1E0C009D750C /* GameControlsView.swift */; };
 		D75872B125FA20F2009D750C /* ViewIsHiddenExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75872B025FA20F2009D750C /* ViewIsHiddenExtension.swift */; };
 		D77837E72504DE1000EC7E8B /* BattlefieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */; };
 		D77837E82504DE1000EC7E8B /* BattlefieldModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */; };
+		D77EF9DA264C655300E8DF59 /* ColorsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77EF9D9264C655300E8DF59 /* ColorsExtension.swift */; };
 		D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6224FEB74F00400941 /* AppDelegate.swift */; };
 		D790FC6524FEB74F00400941 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D790FC6424FEB74F00400941 /* GameViewController.swift */; };
 		D790FC6C24FEB75300400941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D790FC6B24FEB75300400941 /* Assets.xcassets */; };
@@ -67,10 +68,11 @@
 /* Begin PBXFileReference section */
 		D758727925FA1831009D750C /* GameMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMainView.swift; sourceTree = "<group>"; };
 		D758727E25FA187D009D750C /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
-		D758729A25FA1AF2009D750C /* GamePhases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePhases.swift; sourceTree = "<group>"; };
-		D75872A425FA1E0C009D750C /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		D758729A25FA1AF2009D750C /* GameStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStates.swift; sourceTree = "<group>"; };
+		D75872A425FA1E0C009D750C /* GameControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameControlsView.swift; sourceTree = "<group>"; };
 		D75872B025FA20F2009D750C /* ViewIsHiddenExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewIsHiddenExtension.swift; sourceTree = "<group>"; };
 		D77837E62504DE1000EC7E8B /* BattlefieldModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattlefieldModel.swift; sourceTree = "<group>"; };
+		D77EF9D9264C655300E8DF59 /* ColorsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsExtension.swift; sourceTree = "<group>"; };
 		D790FC5F24FEB74F00400941 /* Battleship AR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battleship AR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D790FC6224FEB74F00400941 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D790FC6424FEB74F00400941 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -137,7 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				D790FC6224FEB74F00400941 /* AppDelegate.swift */,
-				D758729A25FA1AF2009D750C /* GamePhases.swift */,
+				D758729A25FA1AF2009D750C /* GameStates.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -145,7 +147,7 @@
 		D75872A325FA1DFB009D750C /* Menu */ = {
 			isa = PBXGroup;
 			children = (
-				D75872A425FA1E0C009D750C /* MainMenuView.swift */,
+				D75872A425FA1E0C009D750C /* GameControlsView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				D75872B025FA20F2009D750C /* ViewIsHiddenExtension.swift */,
+				D77EF9D9264C655300E8DF59 /* ColorsExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -327,7 +330,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = "Александр";
 				TargetAttributes = {
 					D790FC5E24FEB74F00400941 = {
@@ -402,8 +405,9 @@
 				D7DC88632504220D005CE084 /* BattlefieldProtocol.swift in Sources */,
 				D7DC8866250422A6005CE084 /* PlayerTurn.swift in Sources */,
 				D758727F25FA187D009D750C /* ARViewContainer.swift in Sources */,
-				D75872A525FA1E0C009D750C /* MainMenuView.swift in Sources */,
-				D758729B25FA1AF2009D750C /* GamePhases.swift in Sources */,
+				D75872A525FA1E0C009D750C /* GameControlsView.swift in Sources */,
+				D77EF9DA264C655300E8DF59 /* ColorsExtension.swift in Sources */,
+				D758729B25FA1AF2009D750C /* GameStates.swift in Sources */,
 				D790FC6324FEB74F00400941 /* AppDelegate.swift in Sources */,
 				D758727A25FA1831009D750C /* GameMainView.swift in Sources */,
 				D7DC884D25041DA7005CE084 /* FieldModel.swift in Sources */,
@@ -433,7 +437,7 @@
 				D7DC8867250422A6005CE084 /* PlayerTurn.swift in Sources */,
 				D7DC885A25042095005CE084 /* PlayerType.swift in Sources */,
 				D790FC7A24FEB75300400941 /* Battleship_ARTests.swift in Sources */,
-				D758729F25FA1B02009D750C /* GamePhases.swift in Sources */,
+				D758729F25FA1B02009D750C /* GameStates.swift in Sources */,
 				D7DC886B2504233C005CE084 /* GameErrors.swift in Sources */,
 				D7DC886E250424E5005CE084 /* Direction.swift in Sources */,
 			);
@@ -500,6 +504,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -560,6 +565,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol BattleshipGameDelegate: class {
+protocol BattleshipGameDelegate: AnyObject {
     
     func changeGamePhase(_ phase: BattleshipPhases)
     

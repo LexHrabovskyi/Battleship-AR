@@ -10,7 +10,7 @@ import SwiftUI
 
 struct GameMainView: View {
     
-    @EnvironmentObject var gamePhases: GamePhases
+    @EnvironmentObject var gamePhases: GameStates
     
     var body: some View {
         
@@ -19,7 +19,7 @@ struct GameMainView: View {
             ARViewContainer()
                 .edgesIgnoringSafeArea(.all)
             
-            MainMenuView()
+            GameControlsView()
             
         }
         
@@ -31,6 +31,7 @@ struct GameMainView: View {
 struct GameMainView_Previews: PreviewProvider {
     static var previews: some View {
         GameMainView()
+            .environmentObject(GameStates())
     }
 }
 #endif
